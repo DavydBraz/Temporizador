@@ -1,5 +1,6 @@
-#Temporizador e outras funcoes relacionadas a tempo
+#Temporizador e Pomodoro timer
 import time
+
 
 #menu
 def Menu():
@@ -9,12 +10,12 @@ def Menu():
   print("\n3-Sair")
   print("\n---------------------------------------------------------")
 
+
 #funcao do temporizador
 def Temporizador():
   print("\n===Temporizador selecionado===")
   try:
     tempo = int(input("\nDigite o tempo em segundos: "))
-
 
     #while tempo!=0 seria a mesma coisa que esse while tempo, porque quando ele for zero ele retorna false
     while tempo:
@@ -30,7 +31,7 @@ def Temporizador():
       time.sleep(1)
       tempo = tempo - 1
     print("Tempo acabou!")
-  
+
     #Barulhinho de beep
     print("\a")
     print("\a")
@@ -43,10 +44,13 @@ def Temporizador():
       print("\nTemporizador finalisado")
     else:
       print(
-      "\nDigitou algo fora das escolhas, devido a isso ocorreu um erro, ira retornar para o menu inicial"
+        "\nDigitou algo fora das escolhas, devido a isso ocorreu um erro, ira retornar para o menu inicial"
       )
   except:
-    print("\nOcorreu um erro, provavelmente digitou algo fora dos parametros, o programa ira retornar a tela do menu inicial")
+    print(
+      "\nOcorreu um erro, provavelmente digitou algo fora dos parametros, o programa ira retornar a tela do menu inicial"
+    )
+
 
 #funcao do Pomodoro
 def Pomodoro():
@@ -73,7 +77,10 @@ def Pomodoro():
         "\nDigitou algo fora das opcoes, devido ao erro retornara para o menu inicial"
       )
   except:
-    print("\nOcorreu um erro, provavelmente digitou algo fora dos parametros, o programa ira retornar a tela do menu inicial")
+    print(
+      "\nOcorreu um erro, provavelmente digitou algo fora dos parametros, o programa ira retornar a tela do menu inicial"
+    )
+
 
 #laco infinito com while, para executar infinitamente as funcoes ate que a opcao sair seja selecionada
 while True:
