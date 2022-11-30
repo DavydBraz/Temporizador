@@ -13,7 +13,7 @@ def Menu():
 
 #funcao do temporizador
 def Temporizador():
-  print("\n===Temporizador selecionado===")
+  print("\n===Temporizador selecionado!===")
   try:
     tempo = int(input("\nDigite o tempo em segundos: "))
 
@@ -54,7 +54,7 @@ def Temporizador():
 
 #funcao do Pomodoro
 def Pomodoro():
-  print("\n===Pomodoro selecionado===")
+  print("\n===Pomodoro selecionado!===")
   try:
     tempo = int(input("\nTempo do Pomodoro: "))
     tempo *= 60
