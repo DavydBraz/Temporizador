@@ -5,15 +5,16 @@ import time
 #menu
 def Menu():
   print("\n---------------------------MENU--------------------------")
-  print("\n1-Temporizador")
-  print("\n2-Pomodoro")
-  print("\n3-Sair")
+  print("\nEscolha uma das opcoes abaixo:")
+  print("\n\t1-Temporizador")
+  print("\n\t2-Pomodoro")
+  print("\n\t3-Sair")
   print("\n---------------------------------------------------------")
 
 
 #funcao do temporizador
 def Temporizador():
-  print("\n===Temporizador selecionado!===")
+  print("\n\t\t=============Temporizador selecionado!=============")
   try:
     tempo = int(input("\nDigite o tempo em segundos: "))
 
