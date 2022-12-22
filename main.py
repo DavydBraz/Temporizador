@@ -55,9 +55,9 @@ def Temporizador():
 
 #funcao do Pomodoro
 def Pomodoro():
-  print("\n===Pomodoro selecionado!===")
+  print("\n\t\t=============Pomodoro selecionado!=============")
   try:
-    tempo = int(input("\nTempo do Pomodoro: "))
+    tempo = int(input("\nTempo do Pomodoro em minutos: "))
     tempo *= 60
     while tempo:
       minutos, segundos = divmod(tempo, 60)
@@ -65,7 +65,7 @@ def Pomodoro():
       print(timer, end="\r")
       time.sleep(1)
       tempo = tempo - 1
-    print("Tempo do Pomodoro teminado\n")
+    print("\nTempo do Pomodoro teminado!\n")
     print("\a")
     print("\a")
     opcao = str(input("Quer utilizar o pomodoro novamente (s/n): "))
