@@ -65,7 +65,7 @@ def Pomodoro():
       print(timer, end="\r")
       time.sleep(1)
       tempo = tempo - 1
-    print("\nTempo do Pomodoro teminado!\n")
+    print("Tempo do Pomodoro teminado!\n")
     print("\a")
     print("\a")
     opcao = str(input("Quer utilizar o pomodoro novamente (s/n): "))
