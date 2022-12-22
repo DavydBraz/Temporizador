@@ -72,7 +72,7 @@ def Pomodoro():
     if opcao == "s" or opcao == "sim":
       Pomodoro()
     elif opcao == "n" or opcao == "nao":
-      print("\nPomodoro finalisado\n")
+      print("\nPomodoro finalisado!\n")
     else:
       print(
         "\nDigitou algo fora das opcoes, devido ao erro retornara para o menu inicial"
@@ -86,7 +86,7 @@ def Pomodoro():
 #laco infinito com while, para executar infinitamente as funcoes ate que a opcao sair seja selecionada
 while True:
   Menu()
-  opcao = str(input("\nQual opcao voce deseja:"))
+  opcao = str(input("\nQual opcao voce deseja: "))
   if opcao == "1":
     Temporizador()
   elif opcao == "2":
